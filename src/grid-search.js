@@ -44,7 +44,7 @@ exports.createApiCallsByCategory = (points, { apiKey, latitude, longitude, radiu
         for (const point of points) {
             const baseApi = `${baseUrl}?&location=${point[1]}%2C${point[0]}&rankby=distance&key=${apiKey}`;
             apiRequests.push({
-                url: `${baseApi}&type=${category}`,
+                url: `${baseApi}&type=cafe`,
                 userData: {
                     category,
                     latitude,
