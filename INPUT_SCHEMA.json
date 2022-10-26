@@ -22,6 +22,15 @@
       "description": "Longitude as float value NN.NNNN",
       "editor": "textfield"
     },
+    "type": {
+        "title": "Place Type",
+        "type": "string",
+        "description": "Type filter",
+        "editor": "textfield",
+        "default": "cafe",
+        "example": "cafe",
+        "prefill": "cafe"
+    },
     "radiusMeters": {
       "title": "Search radius in meters",
       "type": "integer",
