@@ -14,8 +14,9 @@ Apify.main(async () => {
     // default radius is 1000 meters
     input.radiusMeters = input.radiusMeters || 1000;
     // input.minRadiusMeters = input.minRadiusMeters || 50;
+    input.type = input.type || "cafe";
 
-    const { apiKey, latitude, longitude, maxResults, minRadiusMeters, proxy, debugLog } = input;
+    const { apiKey, latitude, longitude, maxResults, minRadiusMeters, proxy, debugLog, type } = input;
 
     if (!(apiKey && latitude && longitude)) {
         log.info('REQUIRED apiKey, latitude, longitude', input);
